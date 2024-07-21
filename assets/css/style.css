@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: Young Serif;
+    src: url(../fonts/young-serif/YoungSerif-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Outfit;
+    src: url(../fonts/outfit/Outfit-VariableFont_wght.ttf);
+    font-weight: 400;
+}
+
+body{
+    /* font-size: 16px; */
+    font-family: Outfit;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.colorStone100{
+    color: hsl(30, 54%, 90%);
+}
+
+.colorStone150{
+    color: hsl(30, 18%, 87%);
+}
+.colorStone600{
+    color: hsl(30, 10%, 34%);
+}
+
+.colorStone900{
+    color: hsl(24, 5%, 18%);
+}
+
+.colorBrown800{
+    color: hsl(14, 45%, 36%);
+}
+.colorRose800{
+    color: hsl(332, 51%, 36%);
+}
+
+.colorRose50{
+    color: hsl(330, 100%, 98%);
+}
+
+.title{
+    font-family: Young Serif;
+}
+
+.container{
+    margin: 45px;
+}
+header .header-img-container{
+    width: 100%;
+}
+
+header .header-img{
+    width: 100%;
+}
+
+header .header-content-container .recipe-describtion{
+    /* font-size: 12px; */
+}
