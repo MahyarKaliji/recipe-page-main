@@ -14,3 +14,9 @@
 # Avoid your project being littered with annoying .DS_Store files!
 .DS_Store
 .prettierignore
+
+style-guide.md
+preview.jpg
+recipe-challenge-screenshot-1440px.png
+recipe-challenge-screenshot-375px.png
+design

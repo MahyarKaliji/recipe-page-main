@@ -1,23 +1,29 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 @font-face {
-    font-family: Young Serif;
-    src: url(../fonts/young-serif/YoungSerif-Regular.ttf);
-    font-weight: 400;
+  font-family: Young Serif;
+  src: url(../fonts/young-serif/YoungSerif-Regular.ttf);
+  font-weight: 400;
 }
 
 @font-face {
-    font-family: Outfit;
-    src: url(../fonts/outfit/Outfit-VariableFont_wght.ttf);
-    font-weight: 400;
+  font-family: Outfit;
+  src: url(../fonts/outfit/Outfit-VariableFont_wght.ttf);
+  font-weight: 400;
 }
 
-body{
-    /* font-size: 16px; */
-    font-family: Outfit;
+body {
+  /* font-size: 16px; */
+  font-family: Outfit;
+  box-sizing: border-box;
 }
+
+.main-container {
+  background-color: #ffffff;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -27,47 +33,174 @@ body{
   color: hsl(228, 45%, 44%);
 }
 
-.colorStone100{
-    color: hsl(30, 54%, 90%);
+.colorStone100 {
+  color: hsl(30, 54%, 90%);
 }
 
-.colorStone150{
-    color: hsl(30, 18%, 87%);
+.colorStone150 {
+  color: hsl(30, 18%, 87%);
 }
-.colorStone600{
-    color: hsl(30, 10%, 34%);
-}
-
-.colorStone900{
-    color: hsl(24, 5%, 18%);
+.colorStone600 {
+  color: hsl(32, 10%, 34%);
 }
 
-.colorBrown800{
-    color: hsl(14, 45%, 36%);
-}
-.colorRose800{
-    color: hsl(332, 51%, 36%);
+.colorStone900 {
+  color: hsl(24, 5%, 18%);
 }
 
-.colorRose50{
-    color: hsl(330, 100%, 98%);
+.colorBrown800 {
+  color: hsl(14, 45%, 36%);
+}
+.colorRose800 {
+  color: hsl(332, 51%, 36%);
 }
 
-.title{
-    font-family: Young Serif;
+.colorRose50 {
+  color: hsl(330, 100%, 98%);
 }
 
-.container{
-    margin: 45px;
-}
-header .header-img-container{
-    width: 100%;
+.title {
+  font-family: Young Serif;
 }
 
-header .header-img{
-    width: 100%;
+.container {
+  margin: 30px 40px;
+}
+header .header-img-container {
+  width: 100%;
 }
 
-header .header-content-container .recipe-describtion{
-    /* font-size: 12px; */
+header .header-img {
+  width: 100%;
+}
+
+header .header-content-container .recipe-title {
+  margin-bottom: 20px;
+  line-height: 35px;
+  font-size: 34px;
+  font-weight: 500;
+}
+
+header .header-content-container .recipe-describtion {
+  /* font-size: 12px; */
+  margin-bottom: 20px;
+}
+
+header .header-content-container .header-list {
+  background-color: hsl(330, 100%, 98%);
+  /* background-color: red; */
+  padding: 25px 30px;
+  border-radius: 8px;
+}
+
+header .header-content-container .header-list .preparation-title {
+  line-height: 20px;
+  font-size: 20px;
+}
+
+header .header-content-container .header-list ul {
+  padding-left: 25px;
+}
+
+header .header-content-container .header-list ul li {
+  padding: 10px 0 0;
+}
+
+.main-title {
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  margin-bottom: 20px;
+  color: hsl(14, 45%, 36%);
+  font-family: Young Serif;
+}
+
+main .ingredients,
+main .instructions {
+  border-bottom: 1px solid hsla(32, 10%, 34%, 0.37);
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+main .ingredients .ingredients-title {
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  margin-bottom: 20px;
+}
+
+main .ingredients ul {
+  padding-left: 25px;
+}
+
+main .ingredients ul li {
+  padding: 5px 0;
+}
+
+main .instructions ol {
+  padding-left: 20px;
+}
+
+main .instructions ol li {
+  padding: 10px;
+}
+
+main .instructions ol li::marker {
+  font-family: Outfit;
+  color: hsl(14, 45%, 36%);
+  font-weight: 600;
+}
+
+main .nutrition .nutrition-content {
+  margin-bottom: 30px;
+}
+
+main .nutrition .table {
+  /* margin: ; */
+  width: 100%;
+  /* text-align: center; */
+}
+
+main .nutrition .table h4 {
+  width: 50%;
+}
+
+main .nutrition .table p {
+  padding: 10px 30px;
+  width: 50%;
+}
+
+.table-row {
+  display: flex;
+  align-items: center;
+}
+
+.table-row-border {
+  border-bottom: 1px solid hsla(32, 10%, 34%, 0.37);
+}
+
+/* ---------------- media query ---------------- */
+
+@media screen and (min-width: 1280px) {
+  body {
+    background-color: hsl(30, 54%, 90%);
+    margin: 110px 350px;
+  }
+
+  .main-container {
+    border-radius: 25px;
+    padding: 30px;
+  }
+
+  header .header-img {
+    border-radius: 12px;
+  }
+
+  .container {
+    margin-inline: 0;
+  }
+
+  header .header-content-container .recipe-title {
+    font-size: 40px;
+  }
 }
